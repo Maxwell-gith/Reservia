@@ -40,7 +40,7 @@
             </nav>
         </header>
 
-        <div class="main">
+        <main>
     <!-- SEARCH -->
             <section class="search">
                 <header class="header_search">
@@ -57,41 +57,43 @@
                             <i class="fas fa-search"></i>
                     </div>
                 </form>
+               
+                <div class="titleandfilters">
                     
-                <h2>Filtres</h2>
-                <div class="filters">
-
-                    <div class="filters_button">
-                        <div class="filters_icons">
-                            <i class="fas fa-money-bill-wave"></i>
+                    <h2>Filtres</h2>
+                    <div class="filters">
+    
+                        <div class="filters_button">
+                            <div class="filters_icons">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <p class="filters_names">Économique</p>
                         </div>
-                        <p class="filters_names">Économique</p>
-                    </div>
-
-                    <div class="filters_button">
-                        <div class="filters_icons">
-                            <i class="fas fa-child"></i> 
+    
+                        <div class="filters_button">
+                            <div class="filters_icons">
+                                <i class="fas fa-child"></i> 
+                            </div>
+                            <p class="filters_names">Familial</p>
                         </div>
-                        <p class="filters_names">Familial</p>
-                    </div>
-
-                    <div class="filters_button">
-                        <div class="filters_icons">
-                            <i class="fas fa-heart"></i>
+    
+                        <div class="filters_button">
+                            <div class="filters_icons">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <p class="filters_names">Romantique</p>
                         </div>
-                        <p class="filters_names">Romantique</p>
-                    </div>
-
-                    <div class="filters_button">
-                        <div class="filters_icons">
-                            <i class="fas fa-dog"></i>
+    
+                        <div class="filters_button">
+                            <div class="filters_icons">
+                                <i class="fas fa-dog"></i>
+                            </div>
+                            <p class="filters_names">Animaux autorisés</p>
                         </div>
-                        <p class="filters_names">Animaux autorisés</p>
+    
                     </div>
-
                 </div>
 
-            
                 <div class="informations">
                     <div class="info_icons">
                         <i class="fas fa-info"></i>
@@ -103,166 +105,149 @@
                 
             </section>
 
-    <!-- POPULAR -->
-            <aside id="popular">
-                <header class="header_popular">
-                    <h1 class="title_popular">Les plus populaires</h1>
-                    <div class="icons_popular">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                </header>
+            <div class="hebergandpopular">
 
-                <a class="card_popular" href="#main_header">    <!-- voir si <a> dans <article> ou pas -->
-                    <article class="popular_article" >
-                        <figure class="pics_popular">
+        <!-- POPULAR -->
+                <aside id="popular">
+                    <header class="header_popular">
+                        <h1 class="title_popular">Les plus populaires</h1>
+                        <div class="icons_popular">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </header>
+    
+                    <a class="card_aside" href="#main_header">
+                        <figure class="card_popular">
                             <img class="img_popular" src="images/hebergements/4_small/hotel_le_soleil_du_matin.jpg" alt="Chambre luxueuse dans les tons vert avec lit double"/>
-                        </figure>
-                        <figcaption class="txt_popular">
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <p>
-                                Nuit à partir de 
-                                <strong>128€</strong>
-                            </p>
-                        </figcaption>
-
-                    </article>
-                </a>
-
-                <a class="card_popular" href="#main_header">
-                    <article class="popular_article">
-                        <figure class="pics_popular">
-                            <img class="img_popular" src="images/hebergements/4_small/au_coeur_de_leau.jpg" alt="Chambre style industriel avec lit double"/>
-                        </figure>
-                        <figcaption class="txt_popular">
-                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                            <p>
-                                Nuit à partir de 
-                                <strong>71€</strong>
-                            </p>
-                        </figcaption>
-
-                    </article>
-                </a>
-
-                <a class="card_popular" href="#main_header">
-                    <article class="popular_article">
-                        <figure class="pics_popular">
-                            <img class="img_popular" src="images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg" alt="Chambre simple dans les tons blanc avec lit double"/>
-                        </figure>
-                        <figcaption class="txt_popular">
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <p>
-                                nuit à partir de 
-                                <strong>68€</strong>
-                            </p>
-                        </figcaption>
-                    </article>
-                </a>
-
-            </aside>
-
-    <!-- HEBERGEMENTS -->
-            <section id="hebergement">
-                <header class="header_hebergement">
-                    <h1>Hébergements à Marseille</h1>
-                </header>
-
-                <div class="card_container">
-                    <a class="card" href="#main_header">
-                        <article class="heberg_article">
-                            <figure class="pics_heberg">
-                                <img class="img_heberg" src="images/hebergements/4_small/auberge_la_cannebiere.jpg" alt="Chambre avec lits superposés vue sur rue"/>
-                            </figure>
-                            <figcaption class="txt_heberg">
-                                <h3>Auberge la Cannebière</h3>
+                            <figcaption class="txt_card">
+                                <h3>Hôtel Le soleil du matin</h3>
                                 <p>
-                                    Nuit à parir de 
-                                    <strong>25€</strong>
-                                </p>
-                            </figcaption>    
-                        </article>
-                    </a>
-    
-                    <a class="card" href="#main_header">
-                        <article class="heberg_article">
-                            <figure class="pics_heberg">
-                                <img class="img_heberg" src="images/hebergements/4_small/hotel_du_port.jpg" alt="Chambre dans les tons clair avec deux lits simples">
-                            </figure>
-                            <figcaption class="txt_heberg">
-                                <h3>Hôtel du port</h3>
-                                <p>
-                                    Nuit à parir de
-                                    <strong>52€</strong>
-                                </p>
-                            </figcaption>    
-                        </article>
-                    </a>
-    
-                    <a class="card" href="#main_header">
-                        <article class="heberg_article">
-                            <figure class="pics_heberg">
-                                <img class="img_heberg" src="images/hebergements/4_small/hotel_les-mouettes.jpg" alt="Chambre avec rangements et lit double">
-                            </figure>
-                            <figcaption class="txt_heberg">
-                                <h3>Hôtel Les mouettes</h3>
-                                <p>
-                                    Nuit à parir de
-                                    <strong>76€</strong>
-                                </p>
-                            </figcaption>    
-                        </article>
-                    </a>
-    
-                    <a class="card" href="#main_header">
-                        <article class="heberg_article">
-                            <figure class="pics_heberg">
-                                <img class="img_heberg" src="images/hebergements/4_small/hotel_de_la_mer.jpg" alt="Chambre dans les tons bleu clair avec lit double">
-                            </figure>
-                            <figcaption class="txt_heberg">
-                                <h3>Hôtel de la mer</h3>
-                                <p>
-                                    Nuit à parir de
-                                    <strong>46€</strong>
-                                </p>
-                            </figcaption>    
-                        </article>
-                    </a>
-    
-                    <a class="card" href="#main_header">    
-                        <article class="heberg_article">
-                            <figure class="pics_heberg">
-                                <img class="img_heberg" src="images/hebergements/4_small/auberge_le_panier.jpg" alt="Chambre style rustique avec deux lits superposés quatre places">
-                            </figure>
-                            <figcaption class="txt_heberg">
-                                <h3>Auberge Le Panier</h3>
-                                <p>
-                                    Nuit à parir de
-                                    <strong>23€</strong>
+                                    Nuit à partir de 
+                                    <strong>128€</strong>
                                 </p>
                             </figcaption>
-    
-                        </article>
+                        </figure>
                     </a>
     
-                    <a class="card" href="#main_header">
-                        <article class="heberg_article">
-                            <figure class="pics_heberg">
-                                <img class="img_heberg" src="images/hebergements/4_small/hotel_chez_amina.jpg" alt="Chambre avec TV et deux lits simples">
-                            </figure>
-                            <figcaption class="txt_heberg">
-                                <h3>Hôtel chez Amina</h3>
+                    <a class="card_aside" href="#main_header">
+                        <figure class="card_popular">
+                            <img class="img_popular" src="images/hebergements/4_small/au_coeur_de_leau.jpg" alt="Chambre style industriel avec lit double"/>
+                            <figcaption class="txt_card">
+                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                 <p>
-                                    Nuit à parir de
-                                    <strong>96€</strong>
+                                    Nuit à partir de 
+                                    <strong>71€</strong>
                                 </p>
-                            </figcaption>    
-                        </article>
+                            </figcaption>
+                        </figure>
                     </a>
-                </div>
+    
+                    <a class="card_aside" href="#main_header">
+                        <figure class="card_popular">
+                            <img class="img_popular" src="images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg" alt="Chambre simple dans les tons blanc avec lit double"/>
+                            <figcaption class="txt_card">
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <p>
+                                    nuit à partir de 
+                                    <strong>68€</strong>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+    
+                </aside>
+    
+        <!-- HEBERGEMENTS -->
+                <section id="hebergement">
+                    <header class="header_hebergement">
+                        <h1>Hébergements à Marseille</h1>
+                    </header>
+    
+                    <div class="card_container">
+                        <a class="card" href="#main_header">
+                            <figure class="card_heberg">
+                                <img class="img_heberg" src="images/hebergements/4_small/auberge_la_cannebiere.jpg" alt="Chambre avec lits superposés vue sur rue"/>
+                                <figcaption class="txt_heberg">
+                                    <h3>Auberge la Cannebière</h3>
+                                    <p>
+                                        Nuit à parir de 
+                                        <strong>25€</strong>
+                                    </p>
+                                </figcaption>    
+                            </figure>
+                        </a>
+        
+                        <a class="card" href="#main_header">
+                            <figure class="card_heberg">
+                                <img class="img_heberg" src="images/hebergements/4_small/hotel_du_port.jpg" alt="Chambre dans les tons clair avec deux lits simples">
+                                <figcaption class="txt_heberg">
+                                    <h3>Hôtel du port</h3>
+                                    <p>
+                                        Nuit à parir de
+                                        <strong>52€</strong>
+                                    </p>
+                                </figcaption>    
+                            </figure>
+                        </a>
+        
+                        <a class="card" href="#main_header">
+                            <figure class="card_heberg">
+                                <img class="img_heberg" src="images/hebergements/4_small/hotel_les-mouettes.jpg" alt="Chambre avec rangements et lit double">
+                                <figcaption class="txt_heberg">
+                                    <h3>Hôtel Les mouettes</h3>
+                                    <p>
+                                        Nuit à parir de
+                                        <strong>76€</strong>
+                                    </p>
+                                </figcaption>    
+                            </figure>
+                        </a>
+        
+                        <a class="card" href="#main_header">
+                            <figure class="card_heberg">
+                                <img class="img_heberg" src="images/hebergements/4_small/hotel_de_la_mer.jpg" alt="Chambre dans les tons bleu clair avec lit double">
+                                <figcaption class="txt_heberg">
+                                    <h3>Hôtel de la mer</h3>
+                                    <p>
+                                        Nuit à parir de
+                                        <strong>46€</strong>
+                                    </p>
+                                </figcaption>    
+                            </figure>
+                        </a>
+        
+                        <a class="card" href="#main_header">    
+                            <figure class="card_heberg">
+                                <img class="img_heberg" src="images/hebergements/4_small/auberge_le_panier.jpg" alt="Chambre style rustique avec deux lits superposés quatre places">
+                                <figcaption class="txt_herg">
+                                    <h3>Auberge Le Panier</h3>
+                                    <p>
+                                        Nuit à parir de
+                                        <strong>23€</strong>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+        
+                        <a class="card" href="#main_header">
+                            <figure class="card_heberg">
+                                <img class="img_heberg" src="images/hebergements/4_small/hotel_chez_amina.jpg" alt="Chambre avec TV et deux lits simples">
+                                <figcaption class="txt_heberg">
+                                    <h3>Hôtel chez Amina</h3>
+                                    <p>
+                                        Nuit à parir de
+                                        <strong>96€</strong>
+                                    </p>
+                                </figcaption>    
+                            </figure>
+                        </a>
+                    </div>
+    
+                    <a href="#main_header"><strong>Afficher plus</strong></a>
+    
+                </section>
 
-                <a href="#main_header">Afficher plus</a>
-
-            </section>
+            </div>
 
     <!-- ACTIVITES -->
             <section id="activites">
@@ -272,97 +257,85 @@
 
                 <div class="card_container">
                     <a class="card" href="#main_header">
-                        <article class="activites_article">
-                            <figure class="pics_activites">
-                                <img class="img_activites" src="images/activites/4_small/vieux_port.jpg" alt="Photo du Vieux Port de Marseille">
-                            </figure>
+                        <figure class="card_activites">
+                            <img class="img_activites" src="images/activites/4_small/vieux_port.jpg" alt="Photo du Vieux Port de Marseille">
                             <figcaption class="txt_activites">
                                 <h3>Vieux Port</h3>
                             </figcaption>
-                        </article>
+                        </figure>
                     </a>
     
                     <a class="card" href="#main_header">
-                        <article class="activites_article">
-                            <figure class="pics_activites">
-                                <img class="img_activites" src="images/activites/4_small/fort_de_pomegues.jpg" alt="Photo du Fort de Pomègues">
-                            </figure>
+                        <figure class="card_activites">
+                            <img class="img_activites" src="images/activites/4_small/fort_de_pomegues.jpg" alt="Photo du Fort de Pomègues">
                             <figcaption class="txt_activites">
                                 <h3>Fort de Pomègues</h3>
                             </figcaption>
-                        </article>
+                        </figure>
                     </a>
     
                     <a class="card" href="#main_header">
-                        <article class="activites_article">
-                            <figure class="pics_activites">
-                                <img class="img_activites" src="images/activites/4_small/iles_du_frioul.jpg" alt="Photo des Îles du Frioul">
-                            </figure>
+                        <figure class="card_activites">
+                            <img class="img_activites" src="images/activites/4_small/iles_du_frioul.jpg" alt="Photo des Îles du Frioul">
                             <figcaption class="txt_activites">
                                 <h3>Îles du Frioul</h3>
                             </figcaption>
-                        </article>
+                        </figure>
                     </a>
     
                     <a class="card" href="#main_header">               
-                        <article class="activites_article">
-                            <figure class="pics_activites">
-                                <img class="img_activites" src="images/activites/4_small/parc_national_des_calanques.jpg" alt="Photo du Parc National des Calanques">
-                            </figure>
+                        <figure class="card_activites">
+                            <img class="img_activites" src="images/activites/4_small/parc_national_des_calanques.jpg" alt="Photo du Parc National des Calanques">
                             <figcaption class="txt_activites">
                                 <h3>Parc National des Calanques</h3>
                             </figcaption>
-                        </article>
+                        </figure>
                     </a>
     
                     <a class="card" href="#main_header">
-                        <article class="activites_article">
-                            <figure class="pics_activites">
-                                <img class="img_activites" src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Photo de Notre-Dame-de-la-Garde">
-                            </figure>
+                        <figure class="card_activites">
+                            <img class="img_activites" src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Photo de Notre-Dame-de-la-Garde">
                             <figcaption class="txt_activites">
                                 <h3>Notre-Dame-de-la-Garde</h3>
                             </figcaption>
-                        </article>
+                        </figure>
                     </a>
     
                     <a class="card" href="#main_header">
-                        <article class="activites_article">
-                            <figure class="pics_activites">
-                                <img class="img_activites" src="images/activites/4_small/parc_longchamp.jpg" alt="Photo du Parc Longchamp">
-                            </figure>
+                        <figure class="card_activites">
+                            <img class="img_activites" src="images/activites/4_small/parc_longchamp.jpg" alt="Photo du Parc Longchamp">
                             <figcaption class="txt_activites">
                                 <h3>Parc Longchamp</h3>
                             </figcaption>
-                        </article>
+                        </figure>
                     </a>
                 </div>
 
             </section>
 
+        </main>
     <!-- FOOTER -->
-            <footer>
-                <ul>
-                    <li><h3>A propos</h3></li>
-                    <li><a href="#main_header">Fonctionnement du site</a></li>
-                    <li><a href="#main_header">Conditions générales de vente</a></li>
-                    <li><a href="#main_header">Données et confidentialité</a></li>
-                </ul>
+        <footer>
+            <ul>
+                <li><h3>A propos</h3></li>
+                <li><a href="#main_header">Fonctionnement du site</a></li>
+                <li><a href="#main_header">Conditions générales de vente</a></li>
+                <li><a href="#main_header">Données et confidentialité</a></li>
+            </ul>
 
-                <ul>
-                    <li><h3>Nos hébergements</h3></li>
-                    <li><a href="#main_header">Charte qualité</a></li>
-                    <li><a href="#main_header">Soumettre votre hôtel</a></li>
-                </ul>
+            <ul>
+                <li><h3>Nos hébergements</h3></li>
+                <li><a href="#main_header">Charte qualité</a></li>
+                <li><a href="#main_header">Soumettre votre hôtel</a></li>
+            </ul>
 
-                <ul>
-                    <li><h3>Assistance</h3></li>
-                    <li><a href="#main_header">Centre d'aide</a></li>
-                    <li><a href="#main_header">Nous contacter</a></li>
-                </ul>
-            </footer>
+            <ul>
+                <li><h3>Assistance</h3></li>
+                <li><a href="#main_header">Centre d'aide</a></li>
+                <li><a href="#main_header">Nous contacter</a></li>
+            </ul>
+        </footer>
 
-        </div>
     </div>
 </body>
 </html>
