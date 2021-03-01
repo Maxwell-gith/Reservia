@@ -174,7 +174,7 @@ input{
     display: flex;
     border: 2px #F2F2F2 solid;
     border-radius: 30px;
-    width: content;
+    width: max-content;
     margin-bottom: 15px;
 }
 
