@@ -69,6 +69,15 @@ section, aside{
     box-shadow: 2px 2px 2px 2px #F2F2F2;
 }
 
+.blue_star{
+    color: #0065FC;
+
+}
+
+.grey_star{
+    color: #F2F2F2;
+}
+
 
 /* MAIN HEADER */
 .logo{
@@ -167,6 +176,10 @@ input{
     border-radius: 30px;
     width: content;
     margin-bottom: 15px;
+}
+
+.filters_button:hover{
+    background-color: #DEEBFF;
 }
 
 .filters_names{
@@ -290,7 +303,7 @@ li{
 @media only screen and (min-width: 700px){
 
 /* ALL */
-    .main{
+    main{
         width: 95%;
         margin: auto;
     }
@@ -308,13 +321,16 @@ li{
     nav{
         display: flex; 
         justify-content: space-between;
-        margin-right: 20px;
-        margin-left: 20px;
         padding-top: 0;
     }
 
-    .logo, .links1, .signup{
+    .logo{
         width: 20%;
+        padding-top: 30px;   
+    }
+
+    .links1, .signup{
+        width: 10%;
         padding-top: 30px;
     }
 
@@ -338,6 +354,7 @@ li{
     .signup{
         order: 2;
         position: relative;
+        padding-right: 0;
     }
 
     .inscrire{
@@ -351,10 +368,13 @@ li{
         border-bottom: none;
     }
 
+    .search{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
 /* POPULAR HERGEMENT */
     #popular{
-        width: 95%;
-        margin: auto;
         border-radius: 20px;
     }
 
@@ -362,6 +382,11 @@ li{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    #hebergement, #activites{
+        padding-left: 0;
+        padding-right: 0;
     }
 
 /* FOOTER */
@@ -379,7 +404,14 @@ li{
 }
 
 @media only screen and (min-width: 1280px){
+/* ALL */
     main{
+        width: 95%;
+        margin: auto;
+    }
+
+/* HEADER */
+    #main_header{
         width: 95%;
         margin: auto;
     }
@@ -388,18 +420,34 @@ li{
         width: 49.9%;
     }
 
-    .links1, .signup{
-        width: 15%;
+    .links1{
+        width: 20%;
+    }
+
+    .signup{
+     text-align: right;
+    }
+
+/* SEARCH */
+    .search{
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .titleandfilters{
         display: flex;
     }
 
-    .filters{
-
+    .filters_button{
+        margin-left: 30px;
     }
 
+    .filters_title{
+    display: flex;
+    align-items: center;
+    }
+
+/* HEBERGEMENT POPULAR */
     .hebergandpopular{
         display: flex;
         flex-direction: row-reverse;
@@ -417,10 +465,16 @@ li{
         background-color: #F2F2F2;
         border-radius: 20px;
         width: 65%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     .card{
         width: 30%;
+    }
+
+    #activites .card_container:nth-child(1){
+        height: 100%;
     }
 
 
