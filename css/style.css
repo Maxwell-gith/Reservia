@@ -245,7 +245,8 @@ input{
 }
 
 .txt_card{
-    margin: 15px;
+    padding: 15px;
+    width: 60%;
 }
 
 /* HEBERGEMENT */
@@ -263,7 +264,7 @@ input{
 }
 
 .txt_heberg{
-    margin: 5px;
+    padding: 5px;
 }
 
 /* ACTIVITES */
@@ -274,14 +275,15 @@ input{
 }
 
 .img_activites{
-    height: 130px;
+    height: 65%;
     width: 100%;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
 }
 
 .txt_activites{
-    margin: 20px;
+    padding: 20px;
+    height: 15%;
 }
 
 /* FOOTER */
@@ -310,6 +312,11 @@ li{
 
     .card{
         width: 45%;
+    }
+
+    #hebergement, #activites{
+        padding-left: 0;
+        padding-right: 0;
     }
 
 /* HEADER */
@@ -384,10 +391,45 @@ li{
         justify-content: space-between;
     }
 
-    #hebergement, #activites{
-        padding-left: 0;
-        padding-right: 0;
+/* ACTIVITES */
+    #activites .card_container{
+        height: 900px;
     }
+
+    .column1, .column3, .column2, .column4{
+        width: 45%;
+        height: 45%;
+    }
+
+    .column1 .card_activites{
+        height: 100%;
+    }
+ 
+    .column1 .card{
+        height: 97%;
+    }
+
+    .column1 .img_activites{
+        height: 82%;
+    }
+
+    .column3 .img_activites{
+        height: 82%;
+    }
+
+    .column3 .card{
+        height: 97%;
+    }
+
+    .column3 .card_activites{
+        height: 100%;
+    }
+
+    #activites .card{
+        width: 100%;
+    }
+
+
 
 /* FOOTER */
     footer{
@@ -473,10 +515,51 @@ li{
         width: 30%;
     }
 
-    #activites .card_container:nth-child(1){
+    .column1, .column2, .column3, .column4{
+        width: 23%;
         height: 100%;
     }
 
+    #activites .card{
+        width: 99%;
+    }
+
+    #activites .card_container{
+        height: 530px;
+    }
+
+    .column2 .card{
+        height: 45%;
+    }
+
+    .column2 .card_activites{
+        height: 100%;
+    }
+
+    .column2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .column4 .card{
+        height: 45%;
+    }
+
+    .column4 .card_activites{
+        height: 100%;
+    }
+
+    .column4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+
+
+
+    
 
 
 
