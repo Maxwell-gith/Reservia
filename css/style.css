@@ -6,14 +6,17 @@ light blue #DEEBFF
 grey #F2F2F2
  */
 
-/* RESET */
+
+
+
+/****************** RESET ******************/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ALL */
+/****************** ALL ******************/
 body{
     font-family: "Raleway", sans-serif;
 }
@@ -78,8 +81,7 @@ section, aside{
     color: #F2F2F2;
 }
 
-
-/* MAIN HEADER */
+/****************** MAIN HEADER ******************/
 .logo{
     width: 49.9%;
     padding-left: 20px;
@@ -116,10 +118,7 @@ nav{
     color: #0065FC;
 }
 
-
-
-
-/* SEARCH */
+/****************** SEARCH ******************/
 .search_bar{
     margin-top: 35px;
     margin-bottom: 35px;
@@ -213,7 +212,7 @@ input{
     margin-right: 15px;
 }
 
-/* POPULAR */
+/****************** POPULAR ******************/
 #popular{
     background-color: #F2F2F2;
 }
@@ -249,7 +248,7 @@ input{
     width: 60%;
 }
 
-/* HEBERGEMENT */
+/****************** HEBERGEMENT ******************/
 .card_heberg{
     height: 200px;
     border-radius: 10px;
@@ -267,7 +266,7 @@ input{
     padding: 5px;
 }
 
-/* ACTIVITES */
+/****************** ACTIVITES ******************/
 .card_activites{
     height: 190px;
     width: 100%;
@@ -286,7 +285,7 @@ input{
     height: 15%;
 }
 
-/* FOOTER */
+/****************** FOOTER ******************/
 footer{
     background-color: #F2F2F2;
     padding-top: 40px;
@@ -300,11 +299,10 @@ li{
 }
 
 
-
-/* MEDIA QUERIES */
+/****************** MEDIA QUERIES 700PX ******************/
 @media only screen and (min-width: 700px){
 
-/* ALL */
+/****************** ALL 700PX ******************/
     main{
         width: 95%;
         margin: auto;
@@ -319,7 +317,7 @@ li{
         padding-right: 0;
     }
 
-/* HEADER */
+/****************** MAIN HEADER 700PX ******************/
     #main_header{
         width: 95%;
         margin: auto;
@@ -364,23 +362,23 @@ li{
         padding-right: 0;
     }
 
-    .inscrire{
-        top: -15px;
-        color: #0065FC;
-    }
-
     .links1:hover{
         color: #0065FC;
         border-top: #0065FC 2px solid;
         border-bottom: none;
     }
 
+/****************** SEARCH 700PX ******************/
     .search{
         padding-right: 0;
         padding-left: 0;
     }
 
-/* POPULAR HERGEMENT */
+    .filters_button{
+        margin-right: 10px;
+    }
+
+/****************** POPULAR HEBERGEMENT 700PX ******************/
     #popular{
         border-radius: 20px;
     }
@@ -391,7 +389,7 @@ li{
         justify-content: space-between;
     }
 
-/* ACTIVITES */
+/****************** ACTIVITES 700PX ******************/
     #activites .card_container{
         height: 900px;
     }
@@ -429,9 +427,7 @@ li{
         width: 100%;
     }
 
-
-
-/* FOOTER */
+/****************** FOOTER 700PX ******************/
     footer{
         display: flex;
         justify-content: space-around;
@@ -442,17 +438,50 @@ li{
         list-style: none;
     }
 
+}
+
+
+/****************** MEDIA QUERIES 900PX ******************/
+@media only screen and (min-width: 900px){
+    .card_aside{
+        width: 45%;
+    }
+
+    .header_popular{
+        width: 100%;
+    }
+
+    #popular{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .filters{
+        justify-content: normal;
+    }
+
+    .filters_button{
+        margin-left: 30px;
+    }
+
 
 }
 
+
+/****************** MEDIA QUERIES 1280PX ******************/
 @media only screen and (min-width: 1280px){
-/* ALL */
+/****************** ALL 1280PX ******************/
     main{
         width: 95%;
         margin: auto;
     }
 
-/* HEADER */
+    .card{
+        width: 30%;
+    }
+
+/****************** MAIN HEADER 1280PX ******************/
     #main_header{
         width: 95%;
         margin: auto;
@@ -470,7 +499,7 @@ li{
      text-align: right;
     }
 
-/* SEARCH */
+/****************** SEARCH 1280PX ******************/
     .search{
         padding-right: 0;
         padding-left: 0;
@@ -489,7 +518,7 @@ li{
     align-items: center;
     }
 
-/* HEBERGEMENT POPULAR */
+/****************** POPULAR HEBERGENT 1280PX ******************/
     .hebergandpopular{
         display: flex;
         flex-direction: row-reverse;
@@ -503,6 +532,10 @@ li{
         flex-direction: column;
     }
 
+    .card_aside{
+        width: 100%;
+    }
+
     #hebergement{
         background-color: #F2F2F2;
         border-radius: 20px;
@@ -510,11 +543,8 @@ li{
         padding-left: 20px;
         padding-right: 20px;
     }
-    
-    .card{
-        width: 30%;
-    }
 
+/****************** ACTIVITES 1280PXPX ******************/    
     .column1, .column2, .column3, .column4{
         width: 23%;
         height: 100%;
@@ -555,15 +585,12 @@ li{
         flex-direction: column;
         justify-content: space-between;
     }
-    
-
-
-
-    
-
 
 
 }
+
+
+
 
 
 
